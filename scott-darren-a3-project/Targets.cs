@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace MohawkGame2D
 {
-    internal class Targets
+    public class Targets
     {
     }
 }

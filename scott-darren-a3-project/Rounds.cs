@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace MohawkGame2D
 {
-    internal class Rounds
+    public class Rounds
     {
     }
 }

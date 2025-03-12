@@ -1,21 +1,15 @@
-﻿// Include the namespaces (code libraries) you need below.
+﻿// Libraries 
 using System;
 using System.Numerics;
 
-// The namespace your code is in.
+// Namespace 
 namespace MohawkGame2D
 {
-    /// <summary>
-    ///     Your game code goes inside this class!
-    /// </summary>
     public class Game
     {
-        // Place your variables here:
-
-
-        /// <summary>
-        ///     Setup runs once before the game loop begins.
-        /// </summary>
+        // Variables
+        Player player = new Player();
+        
         public void Setup()
         {
             // Window Setup
@@ -23,14 +17,15 @@ namespace MohawkGame2D
             Window.SetSize(800, 600);
             Window.TargetFPS = 60;
             Window.ClearBackground(Color.OffWhite);
+
+            
+            //Initial Tank Render
+            player.Render();  
         }
 
-        /// <summary>
-        ///     Update runs every frame.
-        /// </summary>
         public void Update()
         {
-
+            player.Movement();
         }
     }
 
