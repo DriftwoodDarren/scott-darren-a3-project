@@ -8,9 +8,13 @@ namespace MohawkGame2D
     public class Game
     {
         // Variables
+        // Tank Variables
         Player player = new Player();
         Targets[] targets = new Targets[5];
+        Rounds[] rounds = new Rounds[100];
 
+        // Bullet Variables
+        //int roundCount;
         public void Setup()
         {
             // Window Setup
@@ -23,6 +27,11 @@ namespace MohawkGame2D
             {
                 targets[index] = new Targets();
             }
+           
+            /*for (int index = 0; index < rounds.Length; index++)
+            {
+                targets[index] = new Targets();
+            }*/
         }
         public void Update()
         {
@@ -39,6 +48,18 @@ namespace MohawkGame2D
             targets[2].Render();
             targets[3].Render();
             targets[4].Render();
+           
+            
+            /*if (Input.IsKeyboardKeyPressed(KeyboardInput.Space))
+            {
+                for (roundCount = new Rounds();
+                roundCount++;
+                rounds[roundCount].isFiring = true;
+                rounds[roundCount].Render(player.GetPlayerPOS());
+            }*/
+            
+           
+            
         }
     }
 

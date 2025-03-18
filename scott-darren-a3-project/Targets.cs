@@ -6,9 +6,9 @@ namespace MohawkGame2D
     public class Targets
     {
         Vector2 targetPOS = Random.Vector2(0, Window.Width - 50, 50, Window.Height - 50);
+
         public void Render()
         {
-           
             // Box 
             Draw.LineColor = Color.Black;
             Draw.FillColor = Color.White;
